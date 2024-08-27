@@ -1,10 +1,9 @@
+import Hero from "./components/Hero";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="flex">
-        <h1>Hello</h1>
-      </div>
-    </main>
+    <div className="bg-white pb-6 sm:pb-8 lg:pb-12">
+      <Hero />
+    </div>
   );
 }
