@@ -33,10 +33,10 @@ export default {
       type: 'number',
     },
     {
-      name: 'category',
-      title: 'Product Category',
-      type: 'reference',
-      to: [{ type: 'category' }],
+      name: 'categories',
+      title: 'Product Categories',
+      type: 'array',
+      of: [{ type: 'reference', to: [{ type: 'category' }] }],
     },
     {
       name: 'tags',
@@ -77,4 +77,4 @@ export default {
       ],
     },
   ],
-}
+};

@@ -9,11 +9,11 @@ export default {
       type: 'string',
     },
     {
-      name: 'subCategories', // Field name corrected to be valid
-      title: 'Sub-Categories', // Title can still have spaces and special characters
+      name: 'subCategories',
+      title: 'Sub-Categories',
       type: 'array',
       of: [{ type: 'reference', to: [{ type: 'category' }] }],
       description: 'Select sub-categories that fall under this category',
     },
   ],
-}
+};
